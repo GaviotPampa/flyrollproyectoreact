@@ -1,20 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 .navcontainer {
-    background-color: black;
-    height: 150px;
-    display: grid;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
 
 }
 
 .nav-menu {
-  display: inline-block;
+    height: 50px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
 
 }
 
 .menu {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 50px;
+    padding: 100px;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
 
 }
 
@@ -26,26 +33,50 @@ a {
     text-decoration: none;
     font-size: 20px;
     padding: 18px;
-    color: rgb(77, 229, 229);
+    color: #4de5e5;
     font-weight: bold;
+
 }
 
-ul li a:hover{
-color: blueviolet; 
- }
+ul li a:hover {
+    color: blueviolet;
+}
 
 .logo {
     height: 150px;
+    padding-top: 0px;
     margin: auto;
+    text-align: left;
+    vertical-align: middle;
 
 }
 
 .numerito {
     padding: .15rem .25rem;
     border-radius: .25rem;
+    color: #4de5e5;
+
+}
+
+.icon {
+    color: #4de5e5;
+
+}
+
+.cart {
+    margin-top: 30px;
 }
 
 .cart-widget :hover {
     color: blueviolet;
 
+}
+
+.item-list-container {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: bold;
+    font-family: 'mynerve';
+    text-align: center;
 }

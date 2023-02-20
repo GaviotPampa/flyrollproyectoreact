@@ -17,7 +17,7 @@ function NavBar() {
                   <li><a href="#">Contactanos</a></li>
                </ul>
          </div>
-         <div className="right">
+         <div className="cart">
              <CartWidget />
          </div>
       </div>

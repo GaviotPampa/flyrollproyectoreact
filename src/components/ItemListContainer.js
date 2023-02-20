@@ -1,4 +1,6 @@
 import React from "react";
+import './styles.css';
+
 function ItemListContainer({greeting}) {
     return (
       <div className="item-list-container">
