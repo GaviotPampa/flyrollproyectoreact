@@ -1,12 +1,12 @@
 /* import { FaBeer } from 'react-icons/fa';
  */
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import  './components/Navbar';
+import  './components/ItemListContainer';
 import './App.css';
 
 
 
-function App() {
+/* function App() {
   return (
     <div className="App">
    
@@ -16,4 +16,4 @@ function App() {
 
 }
 
-export default App;
+export default App; */
