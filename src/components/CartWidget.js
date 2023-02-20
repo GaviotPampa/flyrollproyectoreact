@@ -1,11 +1,12 @@
 import React from "react";
 import { BsFillCartFill } from 'react-icons/bs';
 
-function CartWidget () {
+
+function CartWidget() {
   return (
     <a href="#" className="cart-widget">
       <BsFillCartFill className="icon" />
-      <span className="badge">3</span>
+      <span className="numerito" class="numerito">0</span>
     </a>
   );
 }

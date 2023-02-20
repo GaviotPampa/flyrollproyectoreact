@@ -2,13 +2,13 @@ import React from "react";
 import CartWidget from './CartWidget';
 import './styles.css';
 
-function Navbar() {
+function NavBar() {
     return (
-      <div>
+      <div className="navcontainer">
          <div className="nav-menu">
             <div>
                <a href="">
-                   <img src="./public/flyrolllogo.jpg" alt="Tienda Fly Roll" />
+                   <img className="logo" src="./../../flyrolllogo.jpg" alt="Tienda Fly Roll" />
                </a>
             </div>
                <ul className="menu">
@@ -25,4 +25,4 @@ function Navbar() {
     );  
 }
 
-export default Navbar; 
+export default NavBar; 

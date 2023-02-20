@@ -1,19 +1,13 @@
-/* import { FaBeer } from 'react-icons/fa';
- */
-import  './components/Navbar';
-import  './components/ItemListContainer';
+import { FaBeer } from 'react-icons/fa';
+ 
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 import './App.css';
-
-
-
-/* function App() {
+function App() {
   return (
-    <div className="App">
-   
-    </div>
+    <NavBar />
   );
   
-
 }
 
-export default App; */
+export default App;  

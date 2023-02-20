@@ -1,4 +1,51 @@
-.nav-menu {
+.navcontainer {
+    background-color: black;
+    height: 150px;
     display: grid;
+
+}
+
+.nav-menu {
+  display: inline-block;
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: rgb(77, 229, 229);
+    font-weight: bold;
+}
+
+ul li a:hover{
+color: blueviolet; 
+ }
+
+.logo {
+    height: 150px;
+    margin: auto;
+
+}
+
+.numerito {
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.cart-widget :hover {
+    color: blueviolet;
 
 }
