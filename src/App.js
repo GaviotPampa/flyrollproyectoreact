@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <NavBar />
       </div>
 
-      <Routes>
+      <Switch>
         <Route
           path="/"
           element={
@@ -26,7 +26,7 @@ function App() {
             element={<ItemListContainer />}
           />
         <Route path = "*" element= { <NotFound />}/>
-      </Routes>
+      </Switch>
 
     </BrowserRouter>
     </>

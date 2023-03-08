@@ -21,6 +21,13 @@ function NavBar() {
             <Link to="/detalle">Detalle</Link>
           </li>
           <li>
+            <Link to="/category/roller">Roller</Link>
+          </li>
+          <li>
+            <Link to="/category/accesorios">Accesorios</Link>
+          </li>
+          
+          <li>
             <Link to="/contacto">Contactanos</Link >
           </li>
       

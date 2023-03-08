@@ -26,7 +26,7 @@ function ItemListContainer({ greeting }) {
       }, 2000);
     });
     getProducts.then((res) => setproducts(res));
-  }, []);
+  }, [idCategory]);
 
   return (
     <>
