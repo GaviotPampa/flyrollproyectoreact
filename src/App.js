@@ -1,26 +1,34 @@
-import { FaBeer } from 'react-icons/fa';
-
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import './App.css';
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
+    <>
+    <BrowserRouter>
       <div>
         <NavBar />
       </div>
 
-      <div>
-        <ItemListContainer greeting={'Hazlos Volar'} />
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              {<ItemListContainer greeting={"Hazlos Volar 🤩"} />}
+            </div>
+          }
+        />
+        <Route path="/detalle" element={<ItemDetailContainer />} />
+        <Route
+            path="/category/:idCategory"
+            element={<ItemListContainer />}
+          />
+      </Routes>
 
-    </div>
+    </BrowserRouter>
+    </>
   );
-
-
-
-
 }
 
-
-export default App;  
+export default App;
