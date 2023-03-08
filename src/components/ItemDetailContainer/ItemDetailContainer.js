@@ -1,13 +1,17 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "../styles.css";
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 
 export default function ItemDetailContainer({ greeting }) {
   const [products, setProducts] = useState([]);
+ 
+ const params = useParams ();
+ const idProduct = params.idProduct
   useEffect(() => {
     const getProducts = new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(products);
+        let productElegido = products.find((item) => item.id === Number (idProduct));
+        resolve(productElegido);
       }, 2000);
     });
     getProducts.then((res) => setProducts(res));

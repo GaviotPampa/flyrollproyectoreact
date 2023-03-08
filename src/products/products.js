@@ -1,19 +1,18 @@
 import "./styles.css";
 
-
 const products = [
   {
     id: 1,
-    tittle: "Casco",
-    description: "",
+    tittle: "Casco 1",
+    description: "casco rosa",
     precio: 550,
     img: "./../assets/img/casco1.jpg",
   },
   {
     id: 2,
-    tittle: "Casco",
-    description: "",
-    precio: 550,
+    tittle: "Casco 2",
+    description: "Casco Dorado ",
+    precio: 3550,
     img: "./../assets/img/casco2.jpg",
   },
   {
@@ -46,15 +45,15 @@ const products = [
   },
   {
     id: 7,
-    tittle: "Casco",
-    description: "",
+    tittle: "Roller 1",
+    description: "Roller Negro",
     precio: 550,
     img: "./../assets/img/roller1.jpg",
   },
   {
     id: 8,
-    tittle: "Casco",
-    description: "",
+    tittle: "Roller 2",
+    description: "Roller con luces",
     precio: 550,
     img: "./../assets/img/roller2.jpg",
   },
