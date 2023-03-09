@@ -79,4 +79,7 @@ ul li a:hover {
     font-size: bold;
     font-family: 'mynerve';
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
