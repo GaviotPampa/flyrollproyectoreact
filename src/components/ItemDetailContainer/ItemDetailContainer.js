@@ -1,12 +1,12 @@
 import "../styles.css";
+import products from "../../products/Products";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
-export default function ItemDetailContainer({ greeting }) {
+ function ItemDetailContainer({ greeting }) {
   const [products, setProducts] = useState({});
  
- const params = useParams ();
- const idProduct = params.idProduct;
+ const idProduct = useParams();
   useEffect(() => {
     const getProducts = new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -34,3 +34,4 @@ export default function ItemDetailContainer({ greeting }) {
     </>
   );
 }
+export default ItemDetailContainer;

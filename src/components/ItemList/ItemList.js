@@ -4,29 +4,31 @@ import React from "react";
 
 /* import { defaults } from "gh-pages";
  */
-export default function ItemList({ products }) {
+
+ function ItemList({ products }) {
   return (
     <div className="item-list-container">
       <ul className="item-List">
         {products.map(
           (product) => (
             /*item*/
-            (<Item products={product} />),
+            (<Item product= {products} /> ),
             (
-              <li key={products.id}>
-                <img src={products.img} alt={products.tittle} />
-                <h4>{products.title} </h4>
-                <small> {products.description} </small>
-                <p>${products.precio} </p>
-                <Link to={`${products.id}`}>
+              <li >
+                <img src={product.img} alt={product.tittle} />
+                <h4>{product.title} </h4>
+                <small> {product.description} </small>
+                <p>${product.precio} </p>
+                <Link to={`/detalle/${product.id}`}>
                   <button>Ver más detalles</button>
                 </Link>
               </li>
             )
           )
         )}
-        ;
+        
       </ul>
     </div>
   );
 }
+export default ItemList;

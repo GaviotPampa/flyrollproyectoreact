@@ -8,7 +8,7 @@ function CartWidget() {
   return (
     <Link to="#" className="cart-widget">
       <BsFillCartFill className="icon" />
-      <span className="numerito" class="numerito">0</span>
+      <span className="numerito">0</span>
     </Link>
   );
 }

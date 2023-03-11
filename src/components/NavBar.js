@@ -9,9 +9,9 @@ function NavBar() {
     <div className="navcontainer">
       <div className="nav-menu">
         <div>
-          <Link to="">
+          <Link to="/">
             <img className="logo" src={flyrolllogo} alt="Tienda Fly Roll" />
-          </Link >
+          </Link>
         </div>
         <ul className="menu">
           <li>
@@ -26,12 +26,10 @@ function NavBar() {
           <li>
             <Link to="/category/accesorios">Accesorios</Link>
           </li>
-          
+
           <li>
-            <Link to="/contacto">Contactanos</Link >
+            <Link to="/contacto">Contactanos</Link>
           </li>
-      
-          
         </ul>
       </div>
       <div className="cart">

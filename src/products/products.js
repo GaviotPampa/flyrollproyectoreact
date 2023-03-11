@@ -6,7 +6,7 @@ const products = [
     tittle: "Casco 1",
     description: "casco rosa",
     precio: 550,
-    img: "/img/casco1.jpg",
+    img: "/casco1.jpg",
     category: "accesorios",
 
   },
@@ -15,43 +15,43 @@ const products = [
     tittle: "Casco 2",
     description: "Casco Dorado ",
     precio: 3550,
-    img: "/img/casco2.jpg",
+    img: "/casco2.jpg",
     category: "accesorios",
 
   },
   {
     id: 3,
-    tittle: "Casco",
+    tittle: "Casco 3",
     description: "",
     precio: 550,
-    img: "/img/casco3.jpg",
+    img: "/casco3.jpg",
     category: "accesorios",
 
   },
   {
     id: 4,
-    tittle: "Casco",
+    tittle: "Casco 4",
     description: "",
     precio: 550,
-    img: "/img/casco4.jpg",
+    img: "/casco4.jpg",
     category: "accesorios",
 
   },
   {
     id: 5,
-    tittle: "Casco",
+    tittle: "Casco 5",
     description: "",
     precio: 550,
-    img: "/img/casco5.jpg",
+    img: "/casco5.jpg",
     category: "accesorios",
 
   },
   {
     id: 6,
-    tittle: "Casco",
+    tittle: "Casco 6",
     description: "",
     precio: 550,
-    img: "/img/casco6.jpg",
+    img: "/casco6.jpg",
     category: "accesorios",
 
   },
@@ -60,7 +60,7 @@ const products = [
     tittle: "Roller 1",
     description: "Roller Negro",
     precio: 550,
-    img: "/img/roller1.jpg",
+    img: "/roller1.jpg",
     category: "roller",
 
   },
@@ -69,28 +69,28 @@ const products = [
     tittle: "Roller 2",
     description: "Roller con luces",
     precio: 550,
-    img: "/img/roller2.jpg",
+    img: "/roller2.jpg",
     category: "roller",
 
   },
   {
     id: 9,
-    tittle: "Casco",
+    tittle: "Roller 3",
     description: "",
     precio: 550,
-    img: "/img/roller3.jpg",
+    img: "/roller3.jpg",
     category: "roller",
 
   },
   {
     id: 10,
-    tittle: "Casco",
+    tittle: "Roller 4",
     description: "",
     precio: 550,
-    img: "/img/roller4.jpg",
+    img: "/roller4.jpg",
     category: "roller",
 
   },
-];
+]
 
 export default products;

@@ -1,7 +1,8 @@
-import ItemList from "./../ItemList/ItemList";
-import products from "../../products/Products"
-import { useState, useEffect, productParams } from "react";
-import "./../styles.css";
+import ItemList from "../ItemList/ItemList";
+import Products from "../../products/Products";
+import React,{ useState, useEffect} from "react";
+import { useParams} from "react-router-dom";
+import "../styles.css";
 
 function getItemFromDataProducts() {
   return new Promise((resolve, reject) => {
@@ -9,7 +10,7 @@ function getItemFromDataProducts() {
 
     setTimeout(() => {
       if (error === true) reject ("Error leyendo los datos");
-      resolve (products);
+      resolve (Products);
     }, 1000);
   });
 }
@@ -17,7 +18,7 @@ function getItemFromDataProducts() {
 function getItemByCategoryFromDataProducts(categoryURL) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let productFilter = products.filter(
+      let productFilter = Products.filter(
         (item) => item.category === categoryURL
       );
       resolve(productFilter);
@@ -28,8 +29,7 @@ function getItemByCategoryFromDataProducts(categoryURL) {
 function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
 
-  const params = productParams();
-  const idCategory = params.idCategory;
+  const {idCategory} = useParams ();
   
   async function leerProdutcs (){
     if ( idCategory === undefined){
