@@ -1,27 +1,32 @@
 import "../styles.css";
-import products from "../../products/Products";
+
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
- function ItemDetailContainer({ greeting }) {
-  const [products, setProducts] = useState({});
+function ItemDetailContainer({ greeting }) {
+const [products, setProducts] = useState({});
  
- const idProduct = useParams();
-  useEffect(() => {
-    const getProducts = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        let productElegido = products.find((item) => item.id === Number(idProduct));
-        resolve(productElegido);
-      }, 2000);
-    });
-    getProducts.then((res) => setProducts(res));
-  }, []);
+const idProduct = useParams();
+function getIndividualItem (idItem) { return new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let productElegido = products.find((item) => item.id === Number(idItem));
+    resolve(productElegido);
+  }, 2000);
+});
+}
+
+useEffect(() => {
+   getIndividualItem(idProduct).then ((respuesta)=>
+   setProducts (respuesta))
+}, []);
+
+
 
   return (
     <>
       <div className="item-list-container">
         <h2>{greeting}</h2>
-        <ul className="Item-List">
+        <ul className="item-List">
           <li className="item-card" key={products.id}>
             <img src={products.img} alt={products.tittle} />
             <h4>{`${products.tittle}`}</h4>

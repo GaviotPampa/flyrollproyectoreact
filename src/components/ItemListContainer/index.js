@@ -1,24 +1,23 @@
-import ItemList from "../ItemList/ItemList";
-import Products from "../../products/Products";
+import ItemList from "../ItemList";
+import products from "../products/products";
 import React,{ useState, useEffect} from "react";
 import { useParams} from "react-router-dom";
 import "../styles.css";
 
 function getItemFromDataProducts() {
   return new Promise((resolve, reject) => {
-    let error = false;
 
     setTimeout(() => {
-      if (error === true) reject ("Error leyendo los datos");
-      resolve (Products);
-    }, 1000);
+     
+      resolve (products);
+    }, 2000);
   });
 }
 
 function getItemByCategoryFromDataProducts(categoryURL) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let productFilter = Products.filter(
+      let productFilter = products.filter(
         (item) => item.category === categoryURL
       );
       resolve(productFilter);
@@ -26,6 +25,7 @@ function getItemByCategoryFromDataProducts(categoryURL) {
   });
 }
 ///////////////////////////////////////
+
 function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
 
@@ -51,7 +51,7 @@ function ItemListContainer({ greeting }) {
     <>
       <div className="item-list-container">
         <h2>{greeting}</h2>
-        <ItemList products={products} />
+        <ItemList products={products}/>
       </div>
     </>
   );
