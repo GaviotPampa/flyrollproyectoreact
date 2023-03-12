@@ -1,7 +1,8 @@
 import "../styles.css";
-
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+
+const Images = require.context ("../../assets/img",true);
 
 function ItemDetailContainer({ greeting }) {
 const [products, setProducts] = useState({});

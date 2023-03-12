@@ -4,20 +4,20 @@ import React from "react";
 /* import { defaults } from "gh-pages";
  */
 
- function ItemList({ products=[] }) {
+ function ItemList({ products=[products] }) {
   return (
-        <>
+        <div>
         {products.map(
-          (product => 
-            
-     
-            <Item key= {products.id} products={product} />        
-                  
-               
-            
+          (product) => {  
+            return (
+              <Item key= {products.id} products={product} />  
+            )
+        
+          }
+                           
           )
-        )}
-         </>  
+        }
+         </div>  
     
   )
 }
