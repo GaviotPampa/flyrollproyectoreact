@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export default function NotFound() {
   return (
-    <div>Error: Esta página no se encontró🤪</div>
+    <h2>Error: Esta página no se encontró🤪</h2>
   );
 }

@@ -4,21 +4,13 @@ import React from "react";
 /* import { defaults } from "gh-pages";
  */
 
- function ItemList({ products=[products] }) {
+function ItemList({ products }) {
   return (
-        <div>
-        {products.map(
-          (product) => {  
-            return (
-              <Item key= {products.id} products={product} />  
-            )
-        
-          }
-                           
-          )
-        }
-         </div>  
-    
-  )
+    <>
+      {products.map((product) => {
+        return <Item key={products.id} products={product} />;
+      })}
+    </>
+  );
 }
 export default ItemList;

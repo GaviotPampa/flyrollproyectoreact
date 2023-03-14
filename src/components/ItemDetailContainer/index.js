@@ -1,41 +1,44 @@
 import "../styles.css";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import products from "../products/products";
+/* 
+const Images = require.context("../../assets/img", true); */
 
-const Images = require.context ("../../assets/img",true);
-
-function ItemDetailContainer({ greeting }) {
-const [products, setProducts] = useState({});
- 
-const idProduct = useParams();
-function getIndividualItem (idItem) { return new Promise((resolve, reject) => {
-  setTimeout(() => {
-    let productElegido = products.find((item) => item.id === Number(idItem));
-    resolve(productElegido);
-  }, 2000);
-});
+function getDetailFromProducts(idProduct) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let productElegido = products.find(
+        (item) => item.id === Number(idProduct)
+      );
+      resolve(productElegido);
+    }, 2000);
+  });
 }
 
-useEffect(() => {
-   getIndividualItem(idProduct).then ((respuesta)=>
-   setProducts (respuesta))
-}, []);
+function ItemDetailContainer() {
+  const [products, setProducts] = useState({});
 
+  const { idProduct } = useParams();
 
+  useEffect(() => {
+    getDetailFromProducts(idProduct).then((res) => {
+      setProducts(res);
+    });
+  });
 
   return (
     <>
-      <div className="item-list-container">
-        <h2>{greeting}</h2>
-        <ul className="item-List">
-          <li className="item-card" key={products.id}>
+      <div className="container">
+        <li className="card" key={products.id}>
+          <div>
             <img src={products.img} alt={products.tittle} />
-            <h4>{`${products.tittle}`}</h4>
-            <small>{products.description}</small>
-            <p>${products.precio} </p>
-            <Link to={<button>Agregar al carrito</button>}></Link>
-          </li>
-        </ul>
+          </div>
+          <h3>{products.tittle}</h3>
+          <small>{products.description}</small>
+          <p>${products.precio} </p>
+          <Link to="">{<button>Agregar al carrito</button>}</Link>
+        </li>
       </div>
     </>
   );

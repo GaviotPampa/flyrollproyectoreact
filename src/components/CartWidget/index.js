@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { BsFillCartFill } from 'react-icons/bs';
+import "./cartwidget.css";
 import '../styles.css';
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import flyrolllogo from "./../assets/logo/flyrolllogo.jpg";
 import CartWidget from "./CartWidget";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
 
 function NavBar() {
@@ -15,16 +15,16 @@ function NavBar() {
         </div>
         <ul className="menu">
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to={"/"}>Inicio</Link>
           </li>
           <li>
-            <Link to="/detalle">Detalle</Link>
+            <Link to={"/description/detalle"}>Detalle</Link>
           </li>
           <li>
-            <Link to="/category/roller">Roller</Link>
+            <NavLink to={"/category/roller"} className={({isActive})=> isActive ? "active" : ""} >Roller</NavLink>
           </li>
           <li>
-            <Link to="/category/accesorios">Accesorios</Link>
+            <NavLink to={"/category/accesorios"}className={({isActive})=> isActive ? "active" : ""} >Accesorios</NavLink>
           </li>
 
           <li>

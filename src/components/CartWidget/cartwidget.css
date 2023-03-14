@@ -1,0 +1,21 @@
+
+.numerito {
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+    color: #4de5e5;
+
+}
+
+.icon {
+    color: #4de5e5;
+
+}
+
+.cart {
+    margin-top: 30px;
+}
+
+.cart-widget :hover {
+    color: blueviolet;
+
+}
