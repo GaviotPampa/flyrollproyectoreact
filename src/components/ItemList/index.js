@@ -1,8 +1,6 @@
 import Item from "../Item";
 import React from "react";
 
-/* import { defaults } from "gh-pages";
- */
 
 function ItemList({ products }) {
   return (

@@ -1,12 +1,22 @@
 *{
   box-sizing: border-box;
+  
 }
 body {
   margin: 0;
   font-family: "mynerve";
+
 }
 
 h2 {
-  padding: 50px;
+  padding-top: 150px;
+  padding-bottom: 50px;
   text-align: center;
+ 
 }
+
+.btn_exportar {
+  color: chartreuse;
+  transform: translateY(100px);
+}
+

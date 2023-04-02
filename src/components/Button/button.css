@@ -1,0 +1,21 @@
+Button {
+  /*  padding-right: 40px;
+    padding-left: 40px; */
+  font-size: 20px;
+  padding-top: 5px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  margin: 5px;
+}
+
+.btnFav {
+  margin: 10px;
+  padding: 0px;
+  font-size: 25px;
+  position: absolute;
+  transform: translateX(270px);
+  color: #000000;
+  background-color: white;
+  border: none;
+}

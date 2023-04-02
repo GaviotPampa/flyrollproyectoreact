@@ -1,0 +1,42 @@
+.container_card_detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.container_description {
+  font-size: 30px;
+  margin-top: 50px;
+  
+}
+
+.card_detail {
+    margin-left: 300px;
+   
+}
+
+.container_card_producto{
+ height: 400px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+
+}
+
+h3{
+  font-size: 35px;
+}
+
+.description {
+  margin-right: 100px;
+}
+
+
+
+
+

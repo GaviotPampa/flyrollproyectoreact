@@ -17,9 +17,7 @@ function NavBar() {
           <li>
             <Link to={"/"}>Inicio</Link>
           </li>
-          <li>
-            <Link to={"/description/detalle"}>Detalle</Link>
-          </li>
+       
           <li>
             <NavLink to={"/category/roller"} className={({isActive})=> isActive ? "active" : ""} >Roller</NavLink>
           </li>
@@ -33,7 +31,9 @@ function NavBar() {
         </ul>
       </div>
       <div className="cart">
+        <Link to= "">
         <CartWidget />
+        </Link>
       </div>
     </div>
   );
