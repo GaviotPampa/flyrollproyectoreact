@@ -1,25 +1,33 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import { BsFillCartFill } from "react-icons/bs";
+import { BsCart, BsCartCheck } from "react-icons/bs";
 import "./cartwidget.css";
 import "../styles.css";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import cartContext from "../../context/cartContext";
 
 function CartWidget() {
-  const {cart, test} = useContext (cartContext);
+  const { cart } = useContext(cartContext);
 
-  const cartCount = cart.length;
+  const [cartCount, setCartCount] = useState(0);
+
+  /* Cada vez que se modifica el carrito, actualizamos la cantidad de productos */
+  useEffect(() => {
+    setCartCount(
+      cart?.reduce((previous, current) => previous + current.quantity, 0)
+    );
+  }, [cart]);
 
   return (
-    <>
-   
-     <Link to="/cart" className="cart-widget" >
-        <BsFillCartFill className="icon" />
-        <span className="numerito" >{cartCount}</span>
-      </Link>
-      
-    </>
+    <Link to="/cart" className="cart-widget">
+      {cartCount === 0 ? (
+        <span>{<BsCart className="icon" />}</span>
+      ) : (
+        <>
+          <BsCartCheck className="icon" />
+          <span className="numerito">{cartCount}</span>
+        </>
+      )}
+    </Link>
   );
 }
 

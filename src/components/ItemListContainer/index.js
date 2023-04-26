@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import "./itemlistcontainer.css";
 import "../styles.css";
 import Loader from "../Loader/LoaderPrimary.js";
+import { initializeApp } from "firebase/app";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 
@@ -17,7 +18,7 @@ function getItemFromDataProducts() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(products);
-    }, 2000);
+    }, 1500);
   });
 }
 
@@ -28,7 +29,7 @@ function getItemByCategoryFromDataProducts(categoryURL) {
         (item) => item.category === categoryURL
       );
       resolve(productFilter);
-    }, 2000);
+    }, 1500);
   });
 }
 ///////////////////////////////////////

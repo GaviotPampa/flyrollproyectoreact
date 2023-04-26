@@ -17,22 +17,28 @@ function NavBar() {
           <li>
             <Link to={"/"}>Inicio</Link>
           </li>
-       
           <li>
-            <NavLink to={"/category/roller"} className={({isActive})=> isActive ? "active" : ""} >Roller</NavLink>
+            <NavLink
+              to={"/category/roller"}
+              className={({ isActive }) => (isActive ? "active" : "")}>
+              Roller
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/category/accesorios"}className={({isActive})=> isActive ? "active" : ""} >Accesorios</NavLink>
+            <NavLink
+              to={"/category/accesorios"}
+              className={({ isActive }) => (isActive ? "active" : "")}>
+              Accesorios
+            </NavLink>
           </li>
-
           <li>
             <Link to="/contacto">Contactanos</Link>
           </li>
         </ul>
       </div>
       <div className="cart">
-        <Link to= "">
-        <CartWidget />
+        <Link to="">
+          <CartWidget />
         </Link>
       </div>
     </div>

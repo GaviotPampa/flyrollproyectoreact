@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import "./itemcount.css";
 
 function ItemCount({ stock, initial, onAddToCart }) {
-  const [valor, setValor] = useState(initial);
+  const [quantity, setValor] = useState(initial);
 
   const sumar = () => {
-    if (valor < stock) {
-      setValor(valor + 1);
+    if (quantity < stock) {
+      setValor(quantity + 1);
     }
   };
 
@@ -16,26 +16,20 @@ function ItemCount({ stock, initial, onAddToCart }) {
   };
 
   const restar = () => {
-    if (valor > initial) {
-      setValor(valor - 1);
+    if (quantity > initial) {
+      setValor(quantity - 1);
     }
   };
 
- 
   return (
     <>
       <div className="contador">
-        <Button  onClick={restar} >-</Button>
-        <>
-        <span> {valor} </span>
-        </>
+        <Button onClick={restar}>-</Button>
+        <span> {quantity} </span>
         <Button onClick={sumar}>+</Button>
         <Button onClick={res}>restablecer</Button>
       </div>
-      
-      <Button onClick={() => onAddToCart(valor)} >
-        Agregar al carrito
-      </Button>
+      <Button onClick={() => onAddToCart(quantity)}>Agregar al carrito</Button>
     </>
   );
 }

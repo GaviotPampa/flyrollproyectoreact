@@ -1,16 +1,11 @@
 .contador {
   display: flex;
+  margin: 10px 0;
 }
 
 span {
   font-size: 22px;
-  margin: 10px;
+  margin: 5px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-
 }
-
-/* .contador_btn {
-
-  background-color: aquamarine;
-  } */

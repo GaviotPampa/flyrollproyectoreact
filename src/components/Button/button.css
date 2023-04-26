@@ -1,6 +1,4 @@
 Button {
-  /*  padding-right: 40px;
-    padding-left: 40px; */
   font-size: 20px;
   padding-top: 5px;
   padding-right: 40px;
@@ -18,4 +16,8 @@ Button {
   color: #000000;
   background-color: white;
   border: none;
+}
+
+.btnFav :hover {
+  color: #4de5e5;
 }

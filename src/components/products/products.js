@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./products.css";
 
 const Products = [
 
@@ -122,7 +122,7 @@ const Products = [
 
   {
     id: 10,
-    tittle: "Casco 1",
+    tittle: "Casco Rose",
     description: "Descripcion: casco",
     precio: 16550,
     img: "/assets/img/cascouno.jpg",
@@ -132,7 +132,7 @@ const Products = [
 
   {
     id: 11,
-    tittle: "Casco 2",
+    tittle: "Casco Millon",
     description: "Descripcion: casco",
     precio: 10550,
     img: "/assets/img/cascodos.jpg",
@@ -142,7 +142,7 @@ const Products = [
 
   {
     id: 12,
-    tittle: "Casco 3",
+    tittle: "Casco Sea",
     description: "Descripcion: casco",
     precio: 16550,
     img: "/assets/img/cascotres.jpg",
@@ -152,7 +152,7 @@ const Products = [
 
   {
     id: 13,
-    tittle: "Casco 4",
+    tittle: "Casco Moon",
     description: "Descripcion: casco",
     precio: 15550,
     img: "/assets/img/cascocuatro.jpg",
@@ -161,7 +161,7 @@ const Products = [
   },
   {
     id: 14,
-    tittle: "Casco 5",
+    tittle: "Casco Black",
     description: "Descripcion: casco",
     precio: 15550,
     img: "/assets/img/cascocinco.jpg",
@@ -170,7 +170,7 @@ const Products = [
   },
   {
     id: 15,
-    tittle: "Casco 6",
+    tittle: "Casco White",
     description: "Descripcion: casco",
     precio: 15550,
     img: "/assets/img/cascoseis.jpg",
@@ -180,7 +180,7 @@ const Products = [
 
   {
     id: 16,
-    tittle: "Ruedas",
+    tittle: "Ruedas Green",
     detalle:"Ruedas de Freeskate",
     description: "Descripcion: especializadas para practicar en la ciudad Freeskate.Se vende individualmente 76mm, 80mm, y 84mm con 85a de dureza." ,
     precio: 5550,
@@ -191,7 +191,7 @@ const Products = [
 
   {
     id: 17,
-    tittle: "Rueda 14",
+    tittle: "Rueda Yellow",
     detalle:"Ruedas 100mm",
     description: "Descripcion: rueda",
     precio: 5550,
@@ -202,7 +202,7 @@ const Products = [
 
   {
     id: 18,
-    tittle: "Ruedas",
+    tittle: "Ruedas Light",
     detalle:"Ruedas Led",
     description: "Descripcion: ruedas",
     precio: 4550,
@@ -213,7 +213,7 @@ const Products = [
 
   {
     id: 19,
-    tittle: "Ruedas",
+    tittle: "Ruedas Blue Sky",
     detalle:"Ruedas 125mm",
     description: "Descripcion: rueda celeste",
     precio: 6550,
@@ -224,7 +224,7 @@ const Products = [
 
   {
     id: 20,
-    tittle: "Rodilleras",
+    tittle: "Rodilleras Violet",
     description: "Descripcion: rodilleras",
     precio: 4550,
     img: "/assets/img/rodilleras1.jpg",
@@ -234,7 +234,7 @@ const Products = [
 
   {
     id: 21,
-    tittle: "Rodilleras",
+    tittle: "Rodilleras Dark",
     description: "Descripcion: rodilleras",
     precio: 4550,
     img: "/assets/img/rodilleras2.jpg",
