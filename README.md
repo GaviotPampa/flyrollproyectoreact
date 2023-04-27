@@ -58,11 +58,11 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
+
 ## Profesores
 ***
 
 > Profesor: Santiago Salkin.
 
-> Mi Tutor: Federico. 
+> Mi Tutor: Federico Blautzik. 
 
