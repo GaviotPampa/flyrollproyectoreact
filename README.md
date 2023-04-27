@@ -1,4 +1,4 @@
-```javascript 
+```javascript
 export default function MyApp() {
   return (
     <div>
@@ -8,7 +8,8 @@ export default function MyApp() {
   );
 }
 ```
-**<h1 align="center">  Curso React JS: Proyecto Final</h1>**
+
+**<h1 align="center"> Curso React JS: Proyecto Final</h1>**
 **<h2 align="center">"E-commerce: FlyRoll"</h2>**
 
 Hola, soy Gabi y estoy aprendiendo React JS en CoderHouse.
@@ -16,14 +17,17 @@ Hola, soy Gabi y estoy aprendiendo React JS en CoderHouse.
 La aplicación que estoy desarrollando es un e-commerce donde se venden rollers y sus accesorios.
 
 ## Table of Contents
+
 1. [General Info](#general-info)
 2. [Tools](#tools)
 3. [Installation](#installation)
 4. [FAQs](#faqs)
 
 ### General Info
-***
-*Brief*:
+
+---
+
+_Brief_:
 
 ● Un usuario puede ingresar a la app web, navegar por los productos e ir a sus detalles.
 ● Desde el detalle puedes ver la descripción, foto y precio e ingresarlo al
@@ -38,20 +42,42 @@ carrito por la cantidad que quiera adquirir.
 cart for the amount you want to purchase.
 ● Once the cart has at least one product, you can view a compact list of the order with the total price.
 ● When clicking 'make purchase', an order is saved in the database that has all the products, the date and gives feedback on the order number.
+
 ### Screenshot
-![Screenshot del proyecto](screenshot_page_flyroll.jpg)
+
+```html
+<div>
+  <p style="text-align:center;">
+    <img
+      src="screenshot_page_flyroll.jpg"
+      alt="Screenshot del proyecto"
+      width="300px"
+    />
+  </p>
+</div>
+```
+
+![Screenshot del proyecto](screenshot_page_flyroll)
+
 ## Tools
-***
+
+---
+
 A list of tools used within the project:
-* [Technologie Node.js](https://nodejs.org/es): Version 18.16.0 LTS 
-* [Library REACT](https://react.dev/): Version 2.34
-* [Firebase](https://firebase.google.com/?hl=es)
-* [Library Bootstrap](https://icons.getbootstrap.com/icons/trash/): Version 1234
-* [Library React-Icons](https://react-icons.github.io/react-icons/icons?name=fa): Version v4.8.0
-* [Library Github Emojis](https://gist.github.com/rxaviers/7360908) :yellow_heart:
+
+- [Technologie Node.js](https://nodejs.org/es): Version 18.16.0 LTS
+- [Library REACT](https://react.dev/): Version 2.34
+- [Firebase](https://firebase.google.com/?hl=es)
+- [Library Bootstrap](https://icons.getbootstrap.com/icons/trash/): Version 1234
+- [Library React-Icons](https://react-icons.github.io/react-icons/icons?name=fa): Version v4.8.0
+- [Library Github Emojis](https://gist.github.com/rxaviers/7360908) :yellow_heart:
+
 ## Installation
-***
-A little intro about the installation. 
+
+---
+
+A little intro about the installation.
+
 ```
 $ git clone https://example.com
 $ cd ../path/to/the/file
@@ -60,9 +86,9 @@ $ npm start
 ```
 
 ## Profesores
-***
+
+---
 
 > Profesor: Santiago Salkin.
 
-> Mi Tutor: Federico Blautzik. 
-
+> Mi Tutor: Federico Blautzik.

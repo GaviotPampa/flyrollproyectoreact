@@ -10,8 +10,35 @@ import LoaderDetail from "../Loader/LoaderDetail";
 import LoaderDetailDescription from "../Loader/LoaderDetailDescription";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { initializeApp } from "firebase/app";
 
-function getDetailFromProducts(idProduct) {
+import { collection, getDoc, doc, getFirestore } from "firebase/firestore";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: "first-reactproyect2023",
+  storageBucket: "first-reactproyect2023.appspot.com",
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MSG_ID,
+  appId: "1:1074029286822:web:8131b6dd69a03b2fc9ab67",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+async function getDetailFromProducts(idItem) {
+  // referencia de la colección y del documento
+  const productsColectionRef = collection(db, "products");
+  const docRef = doc(productsColectionRef, idItem);
+
+  // getDoc -> datos
+  const docSnapshot = await getDoc(docRef);
+ 
+  return { ...docSnapshot.data(), id: docSnapshot.id };
+}
+
+/* function getDetailFromProducts(idProduct) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       let productElegido = products.find(
@@ -20,7 +47,7 @@ function getDetailFromProducts(idProduct) {
       resolve(productElegido);
     }, 2000);
   });
-}
+} */
 
 function ItemDetailContainer() {
   const [products, setProducts] = useState({});
